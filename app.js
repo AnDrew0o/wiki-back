@@ -2,7 +2,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 
-app.use(express.static('wiki'));
+app.use(express.static('wiki')); 
 
 const setCorsHeaders = (req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200'); // replace with the URL of your Angular app
